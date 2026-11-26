@@ -97,6 +97,22 @@ real-person validation cases were omitted from this public copy. The retained
 audit modules operate on compatible private inputs when those are supplied by
 an authorised researcher.
 
+## Recommendation audits
+
+- `src/rag_prototype/grounding_audit_v2.py` checks retrieved-course provenance,
+  cited respondent and profile evidence, claim/text overlap, and unsupported
+  eligibility statements in recommendations and declines.
+- `src/rag_prototype/evidence_category_discipline_audit.py` checks whether each
+  cited variable is used consistently with its evidence-policy category and
+  assigns PASS, PASS WITH CAUTION, or FAIL using transparent keyword and
+  citation-position rules.
+- `src/rag_prototype/evidence_hierarchy_audit.py` checks evidence-hierarchy
+  rules, adjacent/direct-match support, occupation and availability misuse,
+  profile overreach, affordability claims, and catalogue-gap disclosure.
+
+Per-person selection lists, private person-level inputs, and saved audit outputs
+are withheld from this public repository to protect respondent confidentiality.
+
 ## Main reproducibility settings
 
 The clustering stages set deterministic random-state constants in the range

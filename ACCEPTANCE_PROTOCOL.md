@@ -138,6 +138,31 @@ Code: `quality_checks` / `checks` blocks in each clustering script, e.g.
 `24_branch_g_household_economic_resources_clustering.py` (lines 701–712) and
 `26_branch_g_inactivity_pathway_future_engagement_clustering.py` (lines 637–649).
 
+### 6a. Single-question check for student and employed models
+
+- For students and employed youth, the single-question check was a review item,
+  and the original scripts did not compute a single-question ARI for the four
+  retained models in those groups.
+- On 27 November 2026 it was computed post hoc on the frozen consensus labels,
+  without re-clustering, using the same procedure as the automatic check in
+  `21_branch_f_household_economic_resources_clustering.py`: single-feature
+  Gower distance, K-medoids at the model's k, 300 starts, seed = model base seed
+  + 91000 + zero-based feature index, and ARI against the frozen labels.
+
+| Retained model | Maximum single-feature ARI | Feature | Below 0.90 |
+|---|---:|---|---|
+| Student study motivation | 0.343 | `study_motivation_type` | Yes |
+| Student economic position | 0.751 | `education_funding_source` | Yes |
+| Student educational trajectory | 0.527 | `worked_while_studying` | Yes |
+| Employed employment security and formality | 0.329 | `job_security_12months` | Yes |
+
+- Comparing the raw categories of `education_funding_source` with the
+  economic-position labels gives ARI 0.823, also below 0.90. The profiles
+  therefore partly reflect how education is funded and are interpreted as
+  relative household position.
+- Reproducibility files: [script](outputs/single_item_check_2026-11-27/run_single_item_check.py)
+  and [aggregate CSV](outputs/single_item_check_2026-11-27/single_feature_ari.csv).
+
 ## 7. Permutation test
 
 Each input column is shuffled independently; the K-medoids search is repeated;

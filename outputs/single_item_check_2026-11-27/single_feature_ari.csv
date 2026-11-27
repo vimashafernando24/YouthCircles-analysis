@@ -1,0 +1,20 @@
+model,group,k,feature,feature_type,n_total,n_observed,n_starts,seed,single_feature_kmedoids_ari,raw_category_ari,raw_category_n,kmedoids_flag_ge_0_80,raw_category_flag_ge_0_80
+Students: study motivation,D,3,study_motivation_type,ordinal,191,191,300,20351823,0.34330527669279987,0.2640520666058792,191.0,False,False
+Students: study motivation,D,3,autonomy_in_study,ordinal,191,191,300,20351824,0.209355280952871,0.20976344379750322,191.0,False,False
+Students: study motivation,D,3,competence_in_study_field,ordinal,191,191,300,20351825,0.2916765431118721,0.28774126647255843,191.0,False,False
+Students: study motivation,D,3,relatedness_at_institution,ordinal,191,191,300,20351826,0.21155820821942944,0.20985125063568486,191.0,False,False
+Students: economic position,D,2,household_income_position,ordinal,191,162,300,20351823,0.0,0.09656252264222139,162.0,False,False
+Students: economic position,D,2,household_worker_share,continuous,191,186,300,20351824,0.0,,,False,False
+Students: economic position,D,2,household_unemployed_share,continuous,191,186,300,20351825,0.0,,,False,False
+Students: economic position,D,2,primary_earner_responsibility,ordinal,191,191,300,20351826,0.07138293233078835,0.07528013056084414,191.0,False,False
+Students: economic position,D,2,primary_income_source,nominal,191,191,300,20351827,0.034743803880321396,0.07847762109281028,191.0,False,False
+Students: economic position,D,2,education_funding_source,nominal,191,191,300,20351828,0.7514066860572648,0.8227733231290787,191.0,False,True
+Students: educational trajectory,D,4,father_education,ordinal,191,186,300,20351824,0.0,0.030207891595081398,186.0,False,False
+Students: educational trajectory,D,4,mother_education,ordinal,191,183,300,20351825,0.0,0.033495093559245195,183.0,False,False
+Students: educational trajectory,D,4,expected_education,ordinal,191,191,300,20351826,0.013890597207645619,0.014160418651262859,191.0,False,False
+Students: educational trajectory,D,4,institution_type,nominal,191,191,300,20351827,0.33997084442431763,0.34146950073076165,191.0,False,False
+Students: educational trajectory,D,4,worked_while_studying,binary,191,188,300,20351828,0.5269415394834945,0.5499090771115729,188.0,False,False
+Students: educational trajectory,D,4,re_entered_education,binary,191,191,300,20351829,0.11715184071502316,0.11715184071502316,191.0,False,False
+Employed: employment security and formality,F,2,contract_type,nominal,81,81,300,20351827,0.30490090294735644,0.4703757567858962,81.0,False,False
+Employed: employment security and formality,F,2,job_security_12months,ordinal_with_unknown,81,81,300,20351828,0.328624277033904,0.31629055638075126,81.0,False,False
+Employed: employment security and formality,F,2,sector_formality,ordinal,81,81,300,20351829,0.018452217020104654,0.026483570377636097,81.0,False,False

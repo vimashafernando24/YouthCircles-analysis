@@ -4,6 +4,8 @@ This folder is a privacy-preserving copy of the analytical code and aggregate
 results used in the Youth Circles project. It is intended for method review and
 paper reproducibility checks.
 
+Full acceptance criteria, thresholds and audit protocol: see ACCEPTANCE_PROTOCOL.md.
+
 ## Privacy and data availability
 
 Raw survey responses and person-level derived data are deliberately not
